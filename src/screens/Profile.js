@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import {globalStyles} from '../global/globalStyle';
 import COLORS from '../global/globalColors';
+import Header from '../components/Header';
 
 
 export default class Profile extends Component {
@@ -27,6 +28,7 @@ export default class Profile extends Component {
           <ImageBackground
             source={require('../assets/images/bluegradbg.jpg')}
             style={globalStyles.bgstyle}>
+            <Header/>
             <ScrollView>
             <View style={styles.profileTopPart}>
               <View style={styles.profileTopPorfileBlock}>
@@ -229,16 +231,16 @@ export default class Profile extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
+
   },
   profileTopPart: {
-    width: '80%',
+    width: '85%',
     borderRadius: 20,
     backgroundColor: '#fff',
     padding: 15,
     alignSelf: 'center',
     marginVertical: 15,
-    marginTop: 100,
+    marginTop:50,
     alignItems: 'center',
 
     shadowColor: '#b2b2b2',
@@ -312,7 +314,7 @@ const styles = StyleSheet.create({
     height: 16,
   },
   profileFormPart: {
-    width: '80%',
+    width: '85%',
     borderRadius: 20,
     backgroundColor: '#fff',
     padding: 15,

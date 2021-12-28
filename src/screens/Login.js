@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import {globalStyles} from '../global/globalStyle';
 import COLORS from '../global/globalColors';
+import Header from '../components/Header';
 
 export default class Login extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Login extends Component {
           <ImageBackground
             source={require('../assets/images/bluegradbg.jpg')}
             style={globalStyles.bgstyle}>
+            <Header/>
             <ScrollView contentContainerStyle={styles.signInscroll}>
               <View style={styles.signInListwrapper}>
                 <View style={styles.signInListBox}>
@@ -37,12 +39,12 @@ export default class Login extends Component {
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/sad.png')}
                         style={styles.smileyIcons}
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/thinking.png')}
                         style={styles.smileyIcons}
                       />
                     </View>
@@ -63,12 +65,12 @@ export default class Login extends Component {
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/sad.png')}
                         style={styles.smileyIcons}
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/thinking.png')}
                         style={styles.smileyIcons}
                       />
                     </View>
@@ -89,12 +91,12 @@ export default class Login extends Component {
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/sad.png')}
                         style={styles.smileyIcons}
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/thinking.png')}
                         style={styles.smileyIcons}
                       />
                     </View>
@@ -115,12 +117,12 @@ export default class Login extends Component {
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/sad.png')}
                         style={styles.smileyIcons}
                       />
                       <Image
                         resizeMode="stretch"
-                        source={require('../assets/images/smile.png')}
+                        source={require('../assets/images/thinking.png')}
                         style={styles.smileyIcons}
                       />
                     </View>
@@ -212,7 +214,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'red',
   },
-  signInListBox: {},
   signInListCounter: {
     backgroundColor: COLORS.yellow,
     width: 20,
@@ -222,8 +223,11 @@ const styles = StyleSheet.create({
     marginRight: 15,
   },
   signInListwrapper: {
-    padding: 50,
+   width:'85%',
     paddingBottom: 10,
+    paddingTop:25,
+    //paddingHorizontal:10,
+   // backgroundColor:'red'
   },
   smileyIcons: {
     width: 14,
@@ -243,6 +247,7 @@ const styles = StyleSheet.create({
     paddingBottom: 15,
     flexDirection: 'row',
     marginBottom: 15,
+ 
   },
   signInFormBox: {
     borderRadius: 12,
@@ -252,7 +257,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     paddingVertical: 18,
     alignItems: 'center',
-    width: '80%',
+    width: '85%',
   },
   forgotPassText: {
     color: COLORS.darkBlue,
@@ -261,6 +266,8 @@ const styles = StyleSheet.create({
   signInscroll: {
     alignItems: 'center',
     justifyContent: 'center',
+    flex:1,
+    paddingBottom:25
   },
   dontHaveAc: {
     flexDirection: 'row',
@@ -277,7 +284,7 @@ const styles = StyleSheet.create({
   },
   signHereWrap: {
     flex: 1,
-    width: '80%',
+    width: '85%',
     borderBottomColor: '#BEBEBE',
     borderBottomWidth: 1,
     paddingBottom: 10,

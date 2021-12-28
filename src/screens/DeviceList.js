@@ -13,6 +13,8 @@ import {
 } from 'react-native';
 import {globalStyles} from '../global/globalStyle';
 import COLORS from '../global/globalColors';
+import Header from '../components/Header';
+
 export default class DeviceList extends Component {
   render() {
     return (
@@ -21,6 +23,7 @@ export default class DeviceList extends Component {
           <ImageBackground
             source={require('../assets/images/bluegradbg.jpg')}
             style={globalStyles.bgstyle}>
+           <Header/>
             <View style={styles.deviceListWrap}>
               <View style={styles.profileFormWrap}>
                 {/* <Text style={styles.profileFormLabel}>Add your KICK device</Text> */}
@@ -101,7 +104,7 @@ const styles = StyleSheet.create({
   },
   deviceListWrap: {
     paddingVertical: 20,
-    width: '80%',
+    width: '85%',
     alignSelf: 'center',
     flex:1
   },

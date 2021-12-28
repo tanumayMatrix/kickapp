@@ -39,7 +39,7 @@ export default class Navigation extends Component {
             </View>
             <View style={styles.navProfileNameWrap}>
               <Text style={styles.navProfileNametext}>John Rudio</Text>
-              <Text style={styles.navProfileLoaction}>Miami, Florida</Text>
+              {/* <Text style={styles.navProfileLoaction}>Miami, Florida</Text> */}
             </View>
           </View>
           <View style={styles.navList}>
@@ -87,14 +87,14 @@ export default class Navigation extends Component {
               <Text style={styles.navListItemName}>User Feedback</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.navListItem}>
+            {/* <TouchableOpacity style={styles.navListItem}>
               <Image
                 resizeMode="contain"
                 source={require('../assets/images/preferences.png')}
                 style={styles.navListImg}
               />
               <Text style={styles.navListItemName}>Preference</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
           <View style={styles.logoutWrap}>
             <TouchableOpacity style={styles.navListItem}>
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
     marginLeft: 20,
   },
   navProfileNametext: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#000',
   },

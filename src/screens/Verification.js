@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import {globalStyles} from '../global/globalStyle';
 import COLORS from '../global/globalColors';
+import Header from '../components/Header';
 
 export default class Verification extends Component {
   render() {
@@ -20,6 +21,7 @@ export default class Verification extends Component {
         <ImageBackground
           source={require('../assets/images/bluegradbg.jpg')}
           style={globalStyles.bgstyle}>
+          <Header/>
           <View style={styles.verificationwrapper}>
             <Text style={styles.verificationTitle}>
               Verify your number with{'\n'}

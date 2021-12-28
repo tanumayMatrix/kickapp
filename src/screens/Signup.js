@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import {globalStyles} from '../global/globalStyle';
 import COLORS from '../global/globalColors';
+import Header from '../components/Header';
 
 export default class Signup extends Component {
   render() {
@@ -21,6 +22,7 @@ export default class Signup extends Component {
           <ImageBackground
             source={require('../assets/images/bluegradbg.jpg')}
             style={globalStyles.bgstyle}>
+            <Header/>
             <ScrollView contentContainerStyle={styles.signInscroll}>
               
               <View  style={styles.signInFormBoxMainWrap}>
@@ -206,7 +208,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     paddingVertical: 18,
     alignItems: 'center',
-  width: '80%',
+  width: '85%',
     marginTop: 50,
    
   },
@@ -242,7 +244,7 @@ signInFormBoxMainWrap:{
   },
   signHereWrap: {
     flex: 1,
-    width: '80%',
+    width: '85%',
     borderBottomColor: '#BEBEBE',
     borderBottomWidth: 1,
     paddingBottom: 10,

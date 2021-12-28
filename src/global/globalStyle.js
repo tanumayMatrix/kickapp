@@ -3,7 +3,7 @@ import COLORS from './globalColors';
 
 export const globalStyles = StyleSheet.create({
     bgstyle:{
-     flex:1
+     flex:1,
     },
     input: {
         fontFamily:

@@ -33,6 +33,8 @@ import AddDevice from './src/screens/AddDevice';
 import Faq from './src/screens/Faq';
 import DeviceList from './src/screens/DeviceList';
 import Navigation from './src/screens/Navigation';
+import Health from './src/screens/Health';
+import Home from './src/screens/Home';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -69,7 +71,7 @@ const App: () => Node = () => {
 
   return (
   <>
-    <Navigation/>
+  <Signup/>
   </>
   );
 };
