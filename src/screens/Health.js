@@ -140,6 +140,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 8,
     borderRadius: 80,
+    marginTop:25
   },
   historicDataText: {
     color: '#fff',
@@ -263,8 +264,12 @@ const styles = StyleSheet.create({
   batteryStatusText: {
     fontSize: 10,
   },
+  historicDataWrapper:{
+    position:'relative'
+  },
   pointsBatteryWrap: {
     position: 'absolute',
     right: 15,
+    top:25
   },
 });

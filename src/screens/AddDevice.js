@@ -24,7 +24,7 @@ export default class AddDevice extends Component {
             <View style={styles.profileTopPorfilePic}>
               <Image
                 resizeMode="stretch"
-                source={require('../assets/images/profile-pic.jpg')}
+                source={require('../assets/images/profile-pic.png')}
                 style={styles.profileImg}
               />
             </View>

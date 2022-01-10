@@ -51,7 +51,23 @@ export const globalStyles = StyleSheet.create({
           textAlign:'center',
           textTransform:'uppercase',
           fontSize:13
-      }
+      },
+      lineBt:{
+        paddingVertical:15,
+        paddingHorizontal:10,
+        borderRadius:80,
+        borderWidth:1,
+        borderColor:'#535353',
+        backgroundColor:'#fff',
+        alignSelf:'stretch'
+      },
+      lineBtText:{
+        color:'#484848',
+        textAlign:'center',
+        textTransform:'uppercase',
+        fontSize:13
+    },
+    
 });
 {/* 
 <View style={styles.signInListwrapper}></View> 

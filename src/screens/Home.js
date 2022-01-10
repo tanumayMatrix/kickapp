@@ -97,6 +97,7 @@ const styles = StyleSheet.create({
       paddingHorizontal: 20,
       paddingVertical: 8,
       borderRadius: 80,
+      marginTop:70
     },
     historicDataText: {
       color: '#fff',
@@ -223,7 +224,7 @@ const styles = StyleSheet.create({
     pointsBatteryWrap: {
       position: 'absolute',
       right: 15,
-      top:140
+      top:190
     },
   });
   

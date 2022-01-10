@@ -35,7 +35,7 @@ export default class Profile extends Component {
                 <View style={styles.profileTopPorfilePic}>
                   <Image
                     resizeMode="stretch"
-                    source={require('../assets/images/profile-pic.jpg')}
+                    source={require('../assets/images/profile-pic.png')}
                     style={styles.profileImg}
                   />
                 </View>
@@ -60,7 +60,7 @@ export default class Profile extends Component {
               </TouchableOpacity>
             </View>
             <View style={styles.profileFormPart}>
-              <View style={styles.profileFormTitle}>
+              {/* <View style={styles.profileFormTitle}>
                 <Text style={styles.profileFormTitleText}>Address</Text>
                 <TouchableOpacity>
                   <Image
@@ -117,7 +117,7 @@ export default class Profile extends Component {
                     autoCapitalize="none"
                   />
                 </View>
-              </View>
+              </View> */}
 
               <View style={[styles.profileFormTitle, styles.profileFormTitleNew]}>
                 <Text style={styles.profileFormTitleText}>Profile Information</Text>

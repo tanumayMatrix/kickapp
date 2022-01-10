@@ -38,6 +38,7 @@ export default class Signup extends Component {
                     underlineColorAndroid="transparent"
                     keyboardType="email-address"
                     autoCapitalize="none"
+                    value='John Rudio '
                   />
                   <View style={globalStyles.inputBoxTik}>
                     <Image
@@ -56,6 +57,7 @@ export default class Signup extends Component {
                     underlineColorAndroid="transparent"
                     keyboardType="email-address"
                     autoCapitalize="none"
+                    value='johnrudio@gmail.com'
                   />
                   <View style={globalStyles.inputBoxTik}>
                     <Image
@@ -75,6 +77,7 @@ export default class Signup extends Component {
                     underlineColorAndroid="transparent"
                     keyboardType="number-pad"
                     autoCapitalize="none"
+                    value='202-555-0124'
                   />
                   <View style={globalStyles.inputBoxTik}>
                     <Image
@@ -85,7 +88,7 @@ export default class Signup extends Component {
                   </View>
                 </View>
 
-                <View style={globalStyles.inputBox}>
+                {/* <View style={globalStyles.inputBox}>
                   <TextInput
                     placeholderTextColor="#AFAFAF"
                     style={globalStyles.input}
@@ -140,14 +143,14 @@ export default class Signup extends Component {
                       style={globalStyles.inputBoxTikIcon}
                     />
                   </View>
-                </View>
+                </View> */}
 
                 <TouchableOpacity style={globalStyles.activateBt}>
                   <Text style={globalStyles.activateBtText}>CONTINUE</Text>
                 </TouchableOpacity>
                
               </View>
-              </View>
+
               <View style={styles.signUpPartBottom}>
                 <Text>You have an account? </Text>
                 <TouchableOpacity>
@@ -155,6 +158,8 @@ export default class Signup extends Component {
                   <Text>Login</Text>
                 </TouchableOpacity>
               </View>
+              </View>
+           
             </ScrollView>
           </ImageBackground>
         </View>
@@ -210,14 +215,28 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   width: '85%',
     marginTop: 50,
+
+
+    shadowColor: '#b2b2b2',
+    shadowOffset: {
+      width: 0,
+      height: 9,
+    },
+    shadowOpacity: 0.98,
+    shadowRadius: 11.95,
+
+    elevation: 18,
    
   },
 signInFormBoxMainWrap:{
-    flex:16
+  marginTop:-15
+   // flex:16
 },
   signUpPartBottom: {
     flexDirection: 'row',
-    flex:2
+    alignItems:'center',
+    justifyContent:'center'
+  //  flex:2
   },
   forgotPassText: {
     color: COLORS.darkBlue,

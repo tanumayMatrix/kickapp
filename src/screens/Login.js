@@ -156,6 +156,7 @@ export default class Login extends Component {
                     underlineColorAndroid="transparent"
                     keyboardType="email-address"
                     autoCapitalize="none"
+                    value='johnrudio@gmail.com'
                   />
                   <View style={globalStyles.inputBoxTik}>
                     <Image
@@ -258,6 +259,16 @@ const styles = StyleSheet.create({
     paddingVertical: 18,
     alignItems: 'center',
     width: '85%',
+
+    shadowColor: '#b2b2b2',
+    shadowOffset: {
+      width: 0,
+      height: 9,
+    },
+    shadowOpacity: 0.98,
+    shadowRadius: 11.95,
+
+    elevation: 18,
   },
   forgotPassText: {
     color: COLORS.darkBlue,

@@ -33,7 +33,7 @@ export default class Navigation extends Component {
             <View style={styles.navProfileImage}>
               <Image
                 resizeMode="stretch"
-                source={require('../assets/images/profile-pic.jpg')}
+                source={require('../assets/images/profile-pic.png')}
                 style={styles.profileImg}
               />
             </View>

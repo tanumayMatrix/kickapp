@@ -12,19 +12,25 @@ export default class Header extends Component {
             source={require('../assets/images/back.png')}
             style={[styles.backIcon]}
           />
+
+          {/* <Image
+            resizeMode="stretch"
+            source={require('../assets/images/hamburger-menu.png')}
+            style={[styles.backIcon]}
+          /> */}
         </TouchableOpacity>
-        <Text style={styles.headerTitle}> Health </Text>
+        <Text style={styles.headerTitle}>Historic Data</Text>
       </View>
     );
   }
 }
 const styles = StyleSheet.create({
-    backIconWrap:{
-        position: 'absolute',
-        left:15,
-        top:25,
-      //  backgroundColor:'red'
-    },
+  backIconWrap: {
+    position: 'absolute',
+    left: 15,
+    top: 25,
+    //  backgroundColor:'red'
+  },
   backIcon: {
     width: 17,
     height: 16,
@@ -33,10 +39,10 @@ const styles = StyleSheet.create({
     color: COLORS.darkBlue,
     fontSize: 24,
   },
-  header:{
-      flexDirection:'row',
-      alignItems:'center',
-      justifyContent:'center',
-      paddingVertical:15
-  }
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 15,
+  },
 });

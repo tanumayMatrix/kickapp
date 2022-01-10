@@ -25,8 +25,8 @@ export default class DeviceList extends Component {
             style={globalStyles.bgstyle}>
            <Header/>
             <View style={styles.deviceListWrap}>
-              <View style={styles.profileFormWrap}>
-                {/* <Text style={styles.profileFormLabel}>Add your KICK device</Text> */}
+              {/* <View style={styles.profileFormWrap}>
+                <Text style={styles.profileFormLabel}>Add your KICK device</Text> 
                 <View style={styles.inputBox}>
                   <TextInput
                     placeholderTextColor="#AFAFAF"
@@ -39,12 +39,12 @@ export default class DeviceList extends Component {
                     autoCapitalize="none"
                   />
                 </View>
-              </View>
+              </View> */}
 
               <Text style={styles.deviceListText}>Device List</Text>
-              <Text style={styles.deviceListTextSearching}>
+              {/* <Text style={styles.deviceListTextSearching}>
                 Searching for devices
-              </Text>
+              </Text> */}
 
               <View style={styles.deviceListContainer}>
               
@@ -147,7 +147,16 @@ const styles = StyleSheet.create({
     alignItems:'center',
    //flex: 1,
     flexDirection:'row',
-    marginVertical:8
+    marginVertical:8,
+    shadowColor: '#b2b2b2',
+    shadowOffset: {
+      width: 0,
+      height: 9,
+    },
+    shadowOpacity: 0.98,
+    shadowRadius: 11.95,
+
+    elevation: 18,
    
   },
   deviceListCol1:{

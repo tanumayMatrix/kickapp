@@ -35,6 +35,8 @@ import DeviceList from './src/screens/DeviceList';
 import Navigation from './src/screens/Navigation';
 import Health from './src/screens/Health';
 import Home from './src/screens/Home';
+import Feedback from './src/screens/Feedback';
+import HistoricData from './src/screens/HistoricData';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
