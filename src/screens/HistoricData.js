@@ -18,10 +18,8 @@ import Header from '../components/Header';
 export default class HistoricData extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <ImageBackground
-          source={require('../assets/images/bluegradbg.jpg')}
-          style={globalStyles.bgstyle}>
+      <View style={globalStyles.container}>
+   
           <Header />
           <ScrollView>
             <View style={styles.historyListWrap}>
@@ -89,7 +87,7 @@ export default class HistoricData extends Component {
               </View>
             </View>
           </ScrollView>
-        </ImageBackground>
+       
       </View>
     );
   }
@@ -104,10 +102,10 @@ const styles = StyleSheet.create({
   },
   historyListTitleText1: {
     fontSize: 20,
-    color: '#000',
+    color: '#fff',
   },
   historyListTitleText2: {
-    color: COLORS.darkGrey,
+    color:'#fff',
     fontSize: 12,
     marginBottom:25
   },
@@ -115,21 +113,21 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    borderBottomColor: '#D9D9D9',
+    borderBottomColor: '#242424',
     borderBottomWidth: 1,
     paddingVertical: 10,
   },
   dayText: {
     fontSize: 16,
-    color: '#000',
+    color: '#fff',
   },
   spentText: {
     fontSize: 12,
-    color: COLORS.darkGrey,
+    color:'#fff',
   },
   mgtext: {
     fontSize: 16,
-    color: '#000',
+    color: '#fff',
   },
   lineChartImg:{
       width:'100%',

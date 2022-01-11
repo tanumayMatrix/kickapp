@@ -17,10 +17,8 @@ import Header from '../components/Header';
 export default class Verification extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <ImageBackground
-          source={require('../assets/images/bluegradbg.jpg')}
-          style={globalStyles.bgstyle}>
+      <View style={globalStyles.container}>
+       
           <Header/>
           <View style={styles.verificationwrapper}>
             <Text style={styles.verificationTitle}>
@@ -71,7 +69,7 @@ export default class Verification extends Component {
             </View>
 
             <View style={styles.verificationCodeNotReceived}>
-              <Text>I didn't receive the code, </Text>
+              <Text style={styles.verificationCodeNotReceivedText}>I didn't receive the code, </Text>
               <TouchableOpacity>
                 <Text style={styles.resendText}>Resend</Text>
               </TouchableOpacity>
@@ -84,16 +82,13 @@ export default class Verification extends Component {
                     </TouchableOpacity>
 
           </View>
-        </ImageBackground>
+     
       </View>
     );
   }
 }
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'red',
-  },
+
   verificationwrapper: {
     paddingHorizontal: 50,
     paddingVertical: 50,
@@ -101,6 +96,7 @@ const styles = StyleSheet.create({
   },
   verificationTitle: {
     textAlign: 'center',
+    color:'#fff'
   },
   verificationInputWrap: {
     flexDirection: 'row',
@@ -135,9 +131,14 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   resendText:{
-      color:COLORS.lightBlue
+      color:COLORS.darkBlue,
+      fontWeight:'bold'
+
   },
   continueBt:{
       marginTop:100
+  },
+  verificationCodeNotReceivedText:{
+    color:'#fff'
   }
 });

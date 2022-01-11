@@ -2,21 +2,23 @@ import {StyleSheet, Platform} from 'react-native';
 import COLORS from './globalColors';
 
 export const globalStyles = StyleSheet.create({
-    bgstyle:{
-     flex:1,
+  
+    container:{
+      flex: 1,
+      backgroundColor: '#000',
     },
     input: {
         fontFamily:
           Platform.OS === 'ios' ? 'SFProDisplay-Regular' : 'SF-Pro-Display-Regular',
-        color: COLORS.darkBlue,
+        color: '#fff',
         paddingRight: 35,
         fontSize: 14,
         width: '100%',
         height: 50,
       },
       inputBox: {
-        backgroundColor: '#fff',
-        borderColor: '#dce6e9',
+        backgroundColor: '#000',
+        borderColor: '#ECECEC',
         borderWidth: 1,
         borderRadius: 10,
         paddingHorizontal: 15,
@@ -57,12 +59,12 @@ export const globalStyles = StyleSheet.create({
         paddingHorizontal:10,
         borderRadius:80,
         borderWidth:1,
-        borderColor:'#535353',
-        backgroundColor:'#fff',
+        borderColor:'#fff',
+        backgroundColor:'#000',
         alignSelf:'stretch'
       },
       lineBtText:{
-        color:'#484848',
+        color:'#fff',
         textAlign:'center',
         textTransform:'uppercase',
         fontSize:13

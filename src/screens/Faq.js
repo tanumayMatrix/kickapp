@@ -93,7 +93,7 @@ export default class Faq extends Component {
   _renderContent = section => {
     return (
       <View style={styles.content}>
-        <Text>{section.content}</Text>
+        <Text style={styles.contentText}>{section.content}</Text>
       </View>
     );
   };
@@ -105,10 +105,8 @@ export default class Faq extends Component {
   render() {
     return (
       <>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+          
             <ImageBackground
               resizeMode="stretch"
               source={require('../assets/images/faq-head.png')}
@@ -137,7 +135,7 @@ export default class Faq extends Component {
                 style={styles.faqHeadImg}
               />
             </View> */}
-          </ImageBackground>
+        
         </View>
       </>
     );
@@ -164,7 +162,7 @@ const styles = StyleSheet.create({
   },
   header: {
     padding: 15,
-    backgroundColor: '#fff',
+    backgroundColor: '#202020',
     marginTop: 8,
     borderRadius: 9,
     borderBottomRadius: 0,
@@ -175,30 +173,32 @@ const styles = StyleSheet.create({
 
 
     
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
   },
   accorContainer: {
     //width: '85%',
     alignSelf: 'center',
-    marginTop: -35,
+    marginTop:15,
     flex:3,
     paddingBottom:20,
    // backgroundColor:'red'
   },
   content: {
-    backgroundColor: '#fff',
+    backgroundColor: '#202020',
+    borderTopColor:'#DCDCDC',
+    borderTopWidth:1,
     // marginBottom:8,
     padding: 15,
     position: 'relative',
-    top: -9,
+   // top: -9,
     borderRadius: 0,
     borderBottomEndRadius: 9,
     borderBottomStartRadius: 9,
@@ -215,6 +215,10 @@ const styles = StyleSheet.create({
   },
   headerText:{
     paddingRight:12,
-    width:'90%'
+    width:'90%',
+    color:'#fff' 
+  },
+  contentText:{
+    color:'#fff' 
   }
 });

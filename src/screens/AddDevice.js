@@ -17,10 +17,8 @@ export default class AddDevice extends Component {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+         
             <View style={styles.profileTopPorfilePic}>
               <Image
                 resizeMode="stretch"
@@ -42,7 +40,7 @@ export default class AddDevice extends Component {
                 />
               </TouchableOpacity>
             </View>
-          </ImageBackground>
+        
         </View>
       </KeyboardAvoidingView>
     );
@@ -51,7 +49,7 @@ export default class AddDevice extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
+  //  backgroundColor: 'red',
   },
 
   profileTopPorfilePic: {
@@ -72,7 +70,7 @@ const styles = StyleSheet.create({
   profileName: {
     fontSize: 25,
     //  fontWeight: 'bold',
-    color: '#4D4D4D',
+    color: '#fff',
     // marginVertical: 15,
     textAlign: 'center',
   },
@@ -88,8 +86,8 @@ const styles = StyleSheet.create({
   addDeviceText:{
       textAlign:'center',
       marginTop:60,
-      marginBottom:25,
-      color:'#000',
+      marginBottom:45,
+      color:'#fff',
       fontSize:18,
       lineHeight:26
   }

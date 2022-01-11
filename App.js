@@ -73,7 +73,7 @@ const App: () => Node = () => {
 
   return (
   <>
-  <Signup/>
+  <Home/>
   </>
   );
 };

@@ -24,10 +24,8 @@ export default class Profile extends Component {
     
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+        
             <Header/>
             <ScrollView>
             <View style={styles.profileTopPart}>
@@ -134,7 +132,7 @@ export default class Profile extends Component {
                 <Text style={styles.profileFormLabel}>Gender</Text>
                 <View style={styles.inputBox}>
                   <TextInput
-                    placeholderTextColor="#AFAFAF"
+                    placeholderTextColor="#fff"
                     value='Male'
                     style={styles.input}
                     placeholder="Gender"
@@ -222,7 +220,7 @@ export default class Profile extends Component {
               </View>
             </View>
             </ScrollView>
-          </ImageBackground>
+         
         </View>
       </KeyboardAvoidingView>
     );
@@ -236,22 +234,22 @@ const styles = StyleSheet.create({
   profileTopPart: {
     width: '85%',
     borderRadius: 20,
-    backgroundColor: '#fff',
+    //backgroundColor: '#fff',
     padding: 15,
     alignSelf: 'center',
     marginVertical: 15,
     marginTop:50,
     alignItems: 'center',
 
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
   },
   editIconWrap: {},
   editIcon: {
@@ -290,17 +288,17 @@ const styles = StyleSheet.create({
   profileName: {
     fontSize: 16,
     fontWeight: 'bold',
-    color: '##4D4D4D',
+    color: '#fff',
     marginVertical: 15,
   },
   profileNumber: {
     fontSize: 14,
-    color: '#878787',
+    color: '#fff',
     marginBottom: 8,
   },
   profileEmail: {
     fontSize: 14,
-    color: '#000',
+    color: '#fff',
     marginBottom: 20,
   },
   completeProfileText: {
@@ -316,22 +314,22 @@ const styles = StyleSheet.create({
   profileFormPart: {
     width: '85%',
     borderRadius: 20,
-    backgroundColor: '#fff',
+   // backgroundColor: '#fff',
     padding: 15,
     alignSelf: 'center',
     marginVertical: 15,
     // marginTop: 100,
     alignItems: 'center',
 
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
   },
   profileFormTitle: {
     alignItems: 'center',
@@ -342,13 +340,14 @@ const styles = StyleSheet.create({
   },
   profileFormTitleText: {
     fontSize: 18,
+    color:'#fff'
   },
   profileFormLabel: {
     fontSize: 14,
-    color: '#7B7A7A',
+    color: '#fff',
   },
   inputBox: {
-    borderBottomColor: '#ccc',
+    borderBottomColor: '#ABBDBE',
     borderBottomWidth: 1,
   },
   profileFormWrap: {
@@ -358,7 +357,7 @@ const styles = StyleSheet.create({
   input: {
     // backgroundColor:'red',
     padding: 0,
-    color:'#000000'
+    color:'#fff'
   },
   profileFormTitleNew:{
       marginTop:15

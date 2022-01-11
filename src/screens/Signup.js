@@ -18,10 +18,8 @@ export default class Signup extends Component {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+         
             <Header/>
             <ScrollView contentContainerStyle={styles.signInscroll}>
               
@@ -31,14 +29,14 @@ export default class Signup extends Component {
               <View style={styles.signInFormBox}>
                 <View style={globalStyles.inputBox}>
                   <TextInput
-                    placeholderTextColor="#AFAFAF"
+                    placeholderTextColor="#fff"
                     style={globalStyles.input}
                     placeholder="Full name"
                     textContentType="username"
                     underlineColorAndroid="transparent"
-                    keyboardType="email-address"
+                   // keyboardType="email-address"
                     autoCapitalize="none"
-                    value='John Rudio '
+                    value='John Rudio'
                   />
                   <View style={globalStyles.inputBoxTik}>
                     <Image
@@ -50,7 +48,7 @@ export default class Signup extends Component {
                 </View>
                 <View style={globalStyles.inputBox}>
                   <TextInput
-                    placeholderTextColor="#AFAFAF"
+                    placeholderTextColor="#fff"
                     style={globalStyles.input}
                     placeholder="Email"
                     textContentType="username"
@@ -152,16 +150,16 @@ export default class Signup extends Component {
               </View>
 
               <View style={styles.signUpPartBottom}>
-                <Text>You have an account? </Text>
+                <Text style={styles.signUpPartBottomText}>You have an account? </Text>
                 <TouchableOpacity>
                 
-                  <Text>Login</Text>
+                  <Text style={styles.signUpPartBottomLoginText}>Login</Text>
                 </TouchableOpacity>
               </View>
               </View>
            
             </ScrollView>
-          </ImageBackground>
+        
         </View>
       </KeyboardAvoidingView>
     );
@@ -169,11 +167,9 @@ export default class Signup extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'red',
+  container:{
+    flex:1
   },
-
   signInListCounter: {
     backgroundColor: COLORS.yellow,
     width: 20,
@@ -208,7 +204,7 @@ const styles = StyleSheet.create({
   signInFormBox: {
     borderRadius: 12,
     padding: 10,
-    backgroundColor: '#fff',
+    //backgroundColor: '#fff',
     margin: 50,
     marginVertical: 20,
     paddingVertical: 18,
@@ -217,15 +213,15 @@ const styles = StyleSheet.create({
     marginTop: 50,
 
 
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
    
   },
 signInFormBoxMainWrap:{
@@ -235,8 +231,16 @@ signInFormBoxMainWrap:{
   signUpPartBottom: {
     flexDirection: 'row',
     alignItems:'center',
-    justifyContent:'center'
+    justifyContent:'center',
+    marginTop:25
   //  flex:2
+  },
+  signUpPartBottomText:{
+    color:'#fff'
+  },
+  signUpPartBottomLoginText:{
+    color:COLORS.darkBlue,
+    fontWeight:'bold'
   },
   forgotPassText: {
     color: COLORS.darkBlue,

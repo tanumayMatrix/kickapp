@@ -18,10 +18,8 @@ export default class Login extends Component {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+       
             <Header/>
             <ScrollView contentContainerStyle={styles.signInscroll}>
               <View style={styles.signInListwrapper}>
@@ -30,7 +28,7 @@ export default class Login extends Component {
                     <Text style={styles.signInListCounterText}>1</Text>
                   </View>
                   <View style={styles.signInListContent}>
-                    <Text>Lorem ipsum dolor sit amet, consectetur? </Text>
+                    <Text style={styles.signInListContentText}>Lorem ipsum dolor sit amet, consectetur? </Text>
                     <View style={styles.smileyWrap}>
                       <Image
                         resizeMode="stretch"
@@ -56,7 +54,7 @@ export default class Login extends Component {
                     <Text style={styles.signInListCounterText}>2</Text>
                   </View>
                   <View style={styles.signInListContent}>
-                    <Text>Lorem ipsum dolor sit amet, consectetur? </Text>
+                    <Text style={styles.signInListContentText}>Lorem ipsum dolor sit amet, consectetur? </Text>
                     <View style={styles.smileyWrap}>
                       <Image
                         resizeMode="stretch"
@@ -82,7 +80,7 @@ export default class Login extends Component {
                     <Text style={styles.signInListCounterText}>3</Text>
                   </View>
                   <View style={styles.signInListContent}>
-                    <Text>Lorem ipsum dolor sit amet, consectetur? </Text>
+                    <Text style={styles.signInListContentText}>Lorem ipsum dolor sit amet, consectetur? </Text>
                     <View style={styles.smileyWrap}>
                       <Image
                         resizeMode="stretch"
@@ -108,7 +106,7 @@ export default class Login extends Component {
                     <Text style={styles.signInListCounterText}>4</Text>
                   </View>
                   <View style={styles.signInListContent}>
-                    <Text>Lorem ipsum dolor sit amet, consectetur? </Text>
+                    <Text style={styles.signInListContentText}>Lorem ipsum dolor sit amet, consectetur? </Text>
                     <View style={styles.smileyWrap}>
                       <Image
                         resizeMode="stretch"
@@ -137,10 +135,10 @@ export default class Login extends Component {
                     source={require('../assets/images/checkbox.png')}
                     style={styles.checkboxIcon}
                   />
-                  <Text>Sign here, I am committed to Quitting.</Text>
+                  <Text style={styles.signInListContentText}>Sign here, I am committed to Quitting.</Text>
                 </View>
                 <Image
-                  resizeMode="stretch"
+                  resizeMode="contain"
                   source={require('../assets/images/signature.png')}
                   style={styles.signatureImg}
                 />
@@ -197,13 +195,13 @@ export default class Login extends Component {
                 <Text style={styles.forgotPassText}>Forgot/Reset Password</Text>
               </TouchableOpacity>
               <View style={styles.dontHaveAc}>
-                <Text>Don't have an Account? </Text>
+                <Text style={styles.dontHaveAcText}>Don't have an Account? </Text>
                 <TouchableOpacity>
-                  <Text style={styles.forgotPassText}>Signup</Text>
+                  <Text style={styles.signupText}>Sign Up</Text>
                 </TouchableOpacity>
               </View>
             </ScrollView>
-          </ImageBackground>
+        
         </View>
       </KeyboardAvoidingView>
     );
@@ -213,10 +211,9 @@ export default class Login extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
   },
   signInListCounter: {
-    backgroundColor: COLORS.yellow,
+    backgroundColor: COLORS.lightGreen,
     width: 20,
     height: 20,
     borderRadius: 80,
@@ -240,7 +237,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   signInListCounterText: {
-    color: '#fff',
+    color: '#000',
   },
   signInListBox: {
     borderBottomColor: '#ccc',
@@ -253,26 +250,30 @@ const styles = StyleSheet.create({
   signInFormBox: {
     borderRadius: 12,
     padding: 10,
-    backgroundColor: '#fff',
+    //backgroundColor: '#fff',
     margin: 50,
     marginVertical: 20,
     paddingVertical: 18,
     alignItems: 'center',
     width: '85%',
 
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
   },
   forgotPassText: {
     color: COLORS.darkBlue,
-    fontSize: 13,
+    //fontSize: 13,
+  },
+  signupText:{
+    color: COLORS.darkBlue,
+    fontWeight:'bold'
   },
   signInscroll: {
     alignItems: 'center',
@@ -299,9 +300,21 @@ const styles = StyleSheet.create({
     borderBottomColor: '#BEBEBE',
     borderBottomWidth: 1,
     paddingBottom: 10,
+    //backgroundColor:'red',
+    flexDirection:'column',
+    justifyContent:'flex-start'
+ 
     //backgroundColor:'red'
   },
   signatureImg: {
+    width:200,
     height: 40,
+    alignSelf:'flex-start'
   },
+  signInListContentText:{
+    color:'#fff'
+  },
+  dontHaveAcText:{
+    color:'#fff'
+  }
 });

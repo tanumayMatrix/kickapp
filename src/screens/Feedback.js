@@ -19,10 +19,8 @@ export default class Feedback extends Component {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+       
             <Header />
             <ScrollView>
               <View style={styles.rateYourExperienceWrap}>
@@ -122,7 +120,7 @@ export default class Feedback extends Component {
                 </View>
               </View>
             </ScrollView>
-          </ImageBackground>
+         
         </View>
       </KeyboardAvoidingView>
     );
@@ -151,11 +149,11 @@ const styles = StyleSheet.create({
   },
   rateYourExperienceText: {
     fontSize: 18,
-    color: '#000',
+    color: '#fff',
   },
   areYouSatisfiedText: {
     fontSize: 12,
-    color: COLORS.darkGrey,
+    color:'#fff',
   },
   improvedSection: {
     width: '85%',
@@ -164,7 +162,7 @@ const styles = StyleSheet.create({
   },
   improvedText: {
     fontSize: 18,
-    color: '#000',
+    color: '#fff',
   },
   feedBackTagsWrap: {
     flexDirection: 'row',
@@ -172,7 +170,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
   },
   feedBackTags: {
-    backgroundColor: '#E3E3E3',
+    backgroundColor:COLORS.lightGreen,
     paddingHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 100,

@@ -19,10 +19,8 @@ export default class DeviceList extends Component {
   render() {
     return (
       <KeyboardAvoidingView style={styles.container}>
-        <View style={styles.container}>
-          <ImageBackground
-            source={require('../assets/images/bluegradbg.jpg')}
-            style={globalStyles.bgstyle}>
+        <View style={globalStyles.container}>
+        
            <Header/>
             <View style={styles.deviceListWrap}>
               {/* <View style={styles.profileFormWrap}>
@@ -42,9 +40,9 @@ export default class DeviceList extends Component {
               </View> */}
 
               <Text style={styles.deviceListText}>Device List</Text>
-              {/* <Text style={styles.deviceListTextSearching}>
+              <Text style={styles.deviceListTextSearching}>
                 Searching for devices
-              </Text> */}
+              </Text>
 
               <View style={styles.deviceListContainer}>
               
@@ -91,7 +89,7 @@ export default class DeviceList extends Component {
                 </View>
               </View>
             </View>
-          </ImageBackground>
+        
         </View>
       </KeyboardAvoidingView>
     );
@@ -100,7 +98,6 @@ export default class DeviceList extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'red',
   },
   deviceListWrap: {
     paddingVertical: 20,
@@ -128,12 +125,12 @@ const styles = StyleSheet.create({
   },
   deviceListText: {
     fontSize: 18,
-    color: '#000',
+    color: '#fff',
     marginTop: 25,
   },
   deviceListTextSearching: {
     fontSize: 12,
-    color: '#646464',
+    color: '#fff',
   },
   deviceListContainer:{
     flex:6,
@@ -141,22 +138,24 @@ const styles = StyleSheet.create({
    /// backgroundColor:'red'
   },
   deviceListBox: {
-    borderRadius: 10,
-    backgroundColor: '#fff',
-    padding: 15,
+   // borderRadius: 10,
+    borderColor:'#ABBDBE',
+    borderBottomWidth:1,
+    //backgroundColor: '#fff',
+    paddingVertical: 15,
     alignItems:'center',
    //flex: 1,
     flexDirection:'row',
     marginVertical:8,
-    shadowColor: '#b2b2b2',
-    shadowOffset: {
-      width: 0,
-      height: 9,
-    },
-    shadowOpacity: 0.98,
-    shadowRadius: 11.95,
+    // shadowColor: '#b2b2b2',
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 9,
+    // },
+    // shadowOpacity: 0.98,
+    // shadowRadius: 11.95,
 
-    elevation: 18,
+    // elevation: 18,
    
   },
   deviceListCol1:{
@@ -176,18 +175,19 @@ const styles = StyleSheet.create({
   },
   deviceListNameText:{
     fontSize:16,
-    color:'#000'
+    color:'#fff'
   },
   deviceFoundIcon:{
     width:24,
     height:24,
-    alignSelf:'flex-end'
+    alignSelf:'flex-end',
+    opacity:0.5,
   },
   deviceFoundIconInactive:{
-    opacity: 0.4,
+    opacity:1,
   },
   connectedText:{
     fontSize:10,
-    color:'#7A7A7A'
+    color:'#fff'
   }
 });

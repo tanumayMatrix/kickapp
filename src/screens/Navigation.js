@@ -17,10 +17,8 @@ import COLORS from '../global/globalColors';
 export default class Navigation extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <ImageBackground
-          source={require('../assets/images/bluegradbg.jpg')}
-          style={globalStyles.bgstyle}>
+      <View style={globalStyles.container}>
+    
           <View style={styles.navProfileTop}>
             <TouchableOpacity style={styles.navClose}>
              
@@ -49,7 +47,7 @@ export default class Navigation extends Component {
                 source={require('../assets/images/profile.png')}
                 style={styles.navListImg}
               />
-              <Text style={styles.navListItemName}>Profile Module</Text>
+              <Text style={styles.navListItemName}>Profile</Text>
             </TouchableOpacity>
             <TouchableOpacity style={styles.navListItem}>
               <Image
@@ -57,7 +55,7 @@ export default class Navigation extends Component {
                 source={require('../assets/images/manage-device.png')}
                 style={styles.navListImg}
               />
-              <Text style={styles.navListItemName}>Manage Devices</Text>
+              <Text style={styles.navListItemName}>Devices</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.navListItem}>
@@ -66,7 +64,7 @@ export default class Navigation extends Component {
                 source={require('../assets/images/health.png')}
                 style={styles.navListImg}
               />
-              <Text style={styles.navListItemName}>Health Module</Text>
+              <Text style={styles.navListItemName}>Health</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.navListItem}>
@@ -106,7 +104,7 @@ export default class Navigation extends Component {
               <Text style={styles.navListItemName}>Logout</Text>
             </TouchableOpacity>
           </View>
-        </ImageBackground>
+       
       </View>
     );
   }
@@ -122,19 +120,20 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     paddingVertical: 50,
     flex: 2,
+    backgroundColor:COLORS.darkBlue
   },
   navList: {
-    flex: 5,
-    backgroundColor: '#fff',
+    flex: 8,
+    backgroundColor: '#000',
     paddingHorizontal: 30,
     paddingVertical: 25,
   },
   logoutWrap: {
-    flex: 1,
-    backgroundColor: '#fff',
+    flex: 1.5,
+   // backgroundColor: '#fff',
     paddingHorizontal: 30,
     // paddingVertical:25,
-    borderTopColor: '#D9D9D9',
+    borderTopColor: '#ABBDBE',
     borderTopWidth: 1,
     justifyContent: 'center',
   },
@@ -154,7 +153,7 @@ const styles = StyleSheet.create({
   navProfileNametext: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#000',
+    color: '#fff',
   },
   navProfileLoaction: {
     fontSize: 14,
@@ -171,7 +170,7 @@ const styles = StyleSheet.create({
   },
   navListItemName: {
     fontSize: 16,
-    color: '#4D4D4D',
+    color: '#fff',
     marginLeft: 10,
   },
   navClose:{
