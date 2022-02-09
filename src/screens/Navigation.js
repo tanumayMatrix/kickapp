@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
   },
   navProfileNametext: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily:'Montserrat-Bold',
     color: '#fff',
   },
   navProfileLoaction: {
@@ -169,8 +169,9 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
   },
   navListItemName: {
-    fontSize: 16,
+    fontSize: 14,
     color: '#fff',
+fontFamily:'Montserrat-Medium',
     marginLeft: 10,
   },
   navClose:{

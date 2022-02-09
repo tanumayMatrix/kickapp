@@ -236,11 +236,13 @@ signInFormBoxMainWrap:{
   //  flex:2
   },
   signUpPartBottomText:{
-    color:'#fff'
+    color:'#fff',
+fontFamily:'Montserrat-Regular'
+
   },
   signUpPartBottomLoginText:{
     color:COLORS.darkBlue,
-    fontWeight:'bold'
+    fontFamily:'Montserrat-Bold'
   },
   forgotPassText: {
     color: COLORS.darkBlue,

@@ -18,8 +18,24 @@ export default class Header extends Component {
             source={require('../assets/images/hamburger-menu.png')}
             style={[styles.backIcon]}
           /> */}
+
+          {/* <Image
+            resizeMode="stretch"
+            source={require('../assets/images/logo-s.png')}
+            style={[styles.logoSmall]}
+          /> */}
+
+
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Historic Data</Text>
+        <Text style={styles.headerTitle}>Team Member</Text>
+
+        {/* <TouchableOpacity style={styles.user}>
+        <Image
+            resizeMode="stretch"
+            source={require('../assets/images/user.png')}
+            style={[styles.userIcon]}
+          />
+        </TouchableOpacity> */}
       </View>
     );
   }
@@ -38,6 +54,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     color:'#fff',
     fontSize: 24,
+    fontFamily:'Montserrat-SemiBold'
   },
   header: {
     flexDirection: 'row',
@@ -45,4 +62,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: 15,
   },
+  logoSmall:{
+    width:22,
+    height:24
+  },
+  userIcon:{
+    width:22,
+    height:22
+  },
+  user:{
+    position: 'absolute',
+    right: 15,
+    top: 20,
+  }
 });

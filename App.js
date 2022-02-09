@@ -37,6 +37,9 @@ import Health from './src/screens/Health';
 import Home from './src/screens/Home';
 import Feedback from './src/screens/Feedback';
 import HistoricData from './src/screens/HistoricData';
+import TeamMember from './src/screens/TeamMember';
+import AddTeamMember from './src/screens/AddTeamMember';
+import EditTeamMember from './src/screens/EditTeamMember';
 
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -73,7 +76,7 @@ const App: () => Node = () => {
 
   return (
   <>
-  <Home/>
+  <EditTeamMember/>
   </>
   );
 };

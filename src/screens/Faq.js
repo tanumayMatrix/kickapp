@@ -216,9 +216,16 @@ const styles = StyleSheet.create({
   headerText:{
     paddingRight:12,
     width:'90%',
-    color:'#fff' 
+    color:'#fff' ,
+    fontSize:14,
+    fontFamily:'Montserrat-SemiBold'
+
+
   },
   contentText:{
-    color:'#fff' 
+    color:'#fff' ,
+    fontSize:14,
+fontFamily:'Montserrat-Regular'
+
   }
 });

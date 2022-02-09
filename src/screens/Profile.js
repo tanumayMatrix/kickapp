@@ -287,7 +287,8 @@ const styles = StyleSheet.create({
   },
   profileName: {
     fontSize: 16,
-    fontWeight: 'bold',
+    fontFamily:'Montserrat-Bold',
+
     color: '#fff',
     marginVertical: 15,
   },
@@ -295,17 +296,23 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#fff',
     marginBottom: 8,
+fontFamily:'Montserrat-Medium'
+
   },
   profileEmail: {
     fontSize: 14,
     color: '#fff',
     marginBottom: 20,
+fontFamily:'Poppins-Regular'
+
   },
   completeProfileText: {
     fontSize: 13,
     color: COLORS.darkBlue,
     marginBottom: 8,
     textTransform: 'uppercase',
+fontFamily:'Montserrat-Bold'
+
   },
   editInfoIcon: {
     width: 16,
@@ -315,7 +322,7 @@ const styles = StyleSheet.create({
     width: '85%',
     borderRadius: 20,
    // backgroundColor: '#fff',
-    padding: 15,
+    paddingVertical: 15,
     alignSelf: 'center',
     marginVertical: 15,
     // marginTop: 100,
@@ -340,11 +347,14 @@ const styles = StyleSheet.create({
   },
   profileFormTitleText: {
     fontSize: 18,
-    color:'#fff'
+    color:'#fff',
+fontFamily:'Montserrat-SemiBold'
   },
   profileFormLabel: {
     fontSize: 14,
     color: '#fff',
+fontFamily:'Montserrat-Regular'
+
   },
   inputBox: {
     borderBottomColor: '#ABBDBE',
@@ -357,7 +367,11 @@ const styles = StyleSheet.create({
   input: {
     // backgroundColor:'red',
     padding: 0,
-    color:'#fff'
+    color:'#fff',
+    fontSize:14,
+fontFamily:'Montserrat-SemiBold'
+
+
   },
   profileFormTitleNew:{
       marginTop:15

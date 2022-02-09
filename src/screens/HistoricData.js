@@ -103,11 +103,15 @@ const styles = StyleSheet.create({
   historyListTitleText1: {
     fontSize: 20,
     color: '#fff',
+fontFamily:'Montserrat-SemiBold'
+
   },
   historyListTitleText2: {
     color:'#fff',
     fontSize: 12,
-    marginBottom:25
+    marginBottom:25,
+fontFamily:'Montserrat-Medium'
+
   },
   historyListItem: {
     flexDirection: 'row',
@@ -120,14 +124,21 @@ const styles = StyleSheet.create({
   dayText: {
     fontSize: 16,
     color: '#fff',
+fontFamily:'Montserrat-SemiBold'
+
   },
   spentText: {
     fontSize: 12,
     color:'#fff',
+    marginTop:5,
+fontFamily:'Montserrat-Medium'
+
   },
   mgtext: {
     fontSize: 16,
     color: '#fff',
+fontFamily:'Montserrat-SemiBold'
+
   },
   lineChartImg:{
       width:'100%',

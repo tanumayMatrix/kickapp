@@ -18,29 +18,27 @@ export default class AddDevice extends Component {
     return (
       <KeyboardAvoidingView style={styles.container}>
         <View style={globalStyles.container}>
-         
-            <View style={styles.profileTopPorfilePic}>
+          <View style={styles.profileTopPorfilePic}>
+            <Image
+              resizeMode="stretch"
+              source={require('../assets/images/profile-pic.png')}
+              style={styles.profileImg}
+            />
+          </View>
+          <Text style={styles.profileName}>John Rudio</Text>
+
+          <View style={styles.addDeviceWrap}>
+            <Text style={styles.addDeviceText}>
+              Welcome to KICK the habit mission! Please add your KICK device
+            </Text>
+            <TouchableOpacity>
               <Image
                 resizeMode="stretch"
-                source={require('../assets/images/profile-pic.png')}
-                style={styles.profileImg}
+                source={require('../assets/images/add-device.png')}
+                style={styles.addDeviceIcon}
               />
-            </View>
-            <Text style={styles.profileName}>John Rudio</Text>
-
-            <View style={styles.addDeviceWrap}>
-              <Text style={styles.addDeviceText}>
-                Welcome to KICK the habit mission! Please add your KICK device
-              </Text>
-              <TouchableOpacity>
-                <Image
-                  resizeMode="stretch"
-                  source={require('../assets/images/add-device.png')}
-                  style={styles.addDeviceIcon}
-                />
-              </TouchableOpacity>
-            </View>
-        
+            </TouchableOpacity>
+          </View>
         </View>
       </KeyboardAvoidingView>
     );
@@ -49,7 +47,7 @@ export default class AddDevice extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  //  backgroundColor: 'red',
+    //  backgroundColor: 'red',
   },
 
   profileTopPorfilePic: {
@@ -69,7 +67,7 @@ const styles = StyleSheet.create({
   },
   profileName: {
     fontSize: 25,
-    //  fontWeight: 'bold',
+    fontFamily: 'Montserrat-Bold',
     color: '#fff',
     // marginVertical: 15,
     textAlign: 'center',
@@ -78,17 +76,18 @@ const styles = StyleSheet.create({
     width: 69,
     height: 69,
   },
-  addDeviceWrap:{
-      width:'80%',
-      alignItems:'center',
-      alignSelf:'center'
+  addDeviceWrap: {
+    width: '80%',
+    alignItems: 'center',
+    alignSelf: 'center',
   },
-  addDeviceText:{
-      textAlign:'center',
-      marginTop:60,
-      marginBottom:45,
-      color:'#fff',
-      fontSize:18,
-      lineHeight:26
-  }
+  addDeviceText: {
+    textAlign: 'center',
+    marginTop: 60,
+    marginBottom: 45,
+    color: '#fff',
+    fontSize: 17,
+    fontFamily: 'Montserrat-Medium',
+    lineHeight: 26,
+  },
 });

@@ -85,7 +85,7 @@ export default class Feedback extends Component {
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity style={[styles.feedBackTags]}>
-                    <Text>Customer Support</Text>
+                    <Text style={[styles.feedBackTagsText]}>Customer Support</Text>
                   </TouchableOpacity>
                   <TouchableOpacity style={[styles.feedBackTags]}>
                     <Text style={[styles.feedBackTagsText]}>
@@ -150,10 +150,14 @@ const styles = StyleSheet.create({
   rateYourExperienceText: {
     fontSize: 18,
     color: '#fff',
+fontFamily:'Montserrat-SemiBold'
+
   },
   areYouSatisfiedText: {
     fontSize: 12,
     color:'#fff',
+fontFamily:'Montserrat-Medium'
+
   },
   improvedSection: {
     width: '85%',
@@ -161,8 +165,10 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
   },
   improvedText: {
-    fontSize: 18,
+    fontSize: 16,
     color: '#fff',
+fontFamily:'Montserrat-SemiBold'
+
   },
   feedBackTagsWrap: {
     flexDirection: 'row',
@@ -181,8 +187,15 @@ const styles = StyleSheet.create({
   feedBackTagsActive: {
     backgroundColor: COLORS.darkBlue,
   },
+  feedBackTagsText:{
+fontSize:13,
+fontFamily:'Montserrat-SemiBold'
+
+  },
   feedBackTagsTextActive: {
     color: '#fff',
+    fontSize:13,
+fontFamily:'Montserrat-SemiBold'
   },
   inputBox: {
     borderWidth: 1,
@@ -194,6 +207,9 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
     height: 150,
     paddingHorizontal: 15,
+    fontSize:14,
+fontFamily:'Poppins-Regular'
+
   },
   submitFeedbackWrap: {
     flexDirection: 'row',

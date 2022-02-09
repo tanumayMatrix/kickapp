@@ -18,85 +18,84 @@ export default class Verification extends Component {
   render() {
     return (
       <View style={globalStyles.container}>
-       
-          <Header/>
-          <View style={styles.verificationwrapper}>
-            <Text style={styles.verificationTitle}>
-              Verify your number with{'\n'}
-              codes sent to you
-            </Text>
+        <Header />
+        <View style={styles.verificationwrapper}>
+          <Text style={styles.verificationTitle}>
+            Verify your number with{'\n'}
+            codes sent to you
+          </Text>
 
-            <View style={styles.verificationInputWrap}>
-              <View style={[styles.verificationInputBox, styles.filled]}>
-                <TextInput
-                  style={[styles.input, styles.filledInput]}
-                  textContentType="username"
-                  underlineColorAndroid="transparent"
-                  keyboardType="number-pad"
-                  autoCapitalize="none"
-                />
-              </View>
-
-              <View style={styles.verificationInputBox}>
-                <TextInput
-                  style={styles.input}
-                  textContentType="username"
-                  underlineColorAndroid="transparent"
-                  keyboardType="number-pad"
-                  autoCapitalize="none"
-                />
-              </View>
-
-              <View style={styles.verificationInputBox}>
-                <TextInput
-                  style={styles.input}
-                  textContentType="username"
-                  underlineColorAndroid="transparent"
-                  keyboardType="number-pad"
-                  autoCapitalize="none"
-                />
-              </View>
-
-              <View style={styles.verificationInputBox}>
-                <TextInput
-                  style={styles.input}
-                  textContentType="username"
-                  underlineColorAndroid="transparent"
-                  keyboardType="number-pad"
-                  autoCapitalize="none"
-                />
-              </View>
+          <View style={styles.verificationInputWrap}>
+            <View style={[styles.verificationInputBox, styles.filled]}>
+              <TextInput
+                style={[styles.input, styles.filledInput]}
+                textContentType="username"
+                underlineColorAndroid="transparent"
+                keyboardType="number-pad"
+                autoCapitalize="none"
+              />
             </View>
 
-            <View style={styles.verificationCodeNotReceived}>
-              <Text style={styles.verificationCodeNotReceivedText}>I didn't receive the code, </Text>
-              <TouchableOpacity>
-                <Text style={styles.resendText}>Resend</Text>
-              </TouchableOpacity>
+            <View style={styles.verificationInputBox}>
+              <TextInput
+                style={styles.input}
+                textContentType="username"
+                underlineColorAndroid="transparent"
+                keyboardType="number-pad"
+                autoCapitalize="none"
+              />
             </View>
 
-            <TouchableOpacity style={[globalStyles.activateBt, styles.continueBt]}>
-                      <Text style={globalStyles.activateBtText}>
-                      CONTINUE
-                      </Text>
-                    </TouchableOpacity>
+            <View style={styles.verificationInputBox}>
+              <TextInput
+                style={styles.input}
+                textContentType="username"
+                underlineColorAndroid="transparent"
+                keyboardType="number-pad"
+                autoCapitalize="none"
+              />
+            </View>
 
+            <View style={styles.verificationInputBox}>
+              <TextInput
+                style={styles.input}
+                textContentType="username"
+                underlineColorAndroid="transparent"
+                keyboardType="number-pad"
+                autoCapitalize="none"
+              />
+            </View>
           </View>
-     
+
+          <View style={styles.verificationCodeNotReceived}>
+            <Text style={styles.verificationCodeNotReceivedText}>
+              I didn't receive the code,{' '}
+            </Text>
+            <TouchableOpacity>
+              <Text style={styles.resendText}>Resend</Text>
+            </TouchableOpacity>
+          </View>
+
+          <TouchableOpacity
+            style={[globalStyles.activateBt, styles.continueBt]}>
+            <Text style={globalStyles.activateBtText}>CONTINUE</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     );
   }
 }
 const styles = StyleSheet.create({
-
   verificationwrapper: {
     paddingHorizontal: 50,
     paddingVertical: 50,
     alignItems: 'center',
   },
   verificationTitle: {
+    fontFamily: 'Montserrat-Bold',
+    fontSize: 17,
     textAlign: 'center',
-    color:'#fff'
+    color: '#fff',
   },
   verificationInputWrap: {
     flexDirection: 'row',
@@ -118,6 +117,7 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.darkBlue,
   },
   input: {
+    fontFamily: 'Montserrat-Bold',
     height: 70,
     textAlign: 'center',
     width: '50%',
@@ -130,15 +130,17 @@ const styles = StyleSheet.create({
   verificationCodeNotReceived: {
     flexDirection: 'row',
   },
-  resendText:{
-      color:COLORS.darkBlue,
-      fontWeight:'bold'
-
+  resendText: {
+    color: COLORS.darkBlue,
+    fontSize: 14,
+    fontFamily: 'Montserrat-Bold',
   },
-  continueBt:{
-      marginTop:100
+  continueBt: {
+    marginTop: 100,
   },
-  verificationCodeNotReceivedText:{
-    color:'#fff'
-  }
+  verificationCodeNotReceivedText: {
+    color: '#fff',
+    fontFamily: 'Montserrat-Regular',
+    fontSize: 14,
+  },
 });

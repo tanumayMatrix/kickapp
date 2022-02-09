@@ -251,11 +251,12 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     padding: 10,
     //backgroundColor: '#fff',
-    margin: 50,
+    //margin: 50,
     marginVertical: 20,
     paddingVertical: 18,
     alignItems: 'center',
     width: '85%',
+  
 
     // shadowColor: '#b2b2b2',
     // shadowOffset: {
@@ -269,11 +270,16 @@ const styles = StyleSheet.create({
   },
   forgotPassText: {
     color: COLORS.darkBlue,
+    fontSize:14,
+fontFamily:'Montserrat-Medium'
+
     //fontSize: 13,
   },
   signupText:{
     color: COLORS.darkBlue,
-    fontWeight:'bold'
+    fontSize:14,
+fontFamily:'Montserrat-Bold'
+
   },
   signInscroll: {
     alignItems: 'center',
@@ -295,7 +301,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   signHereWrap: {
-    flex: 1,
+   // flex: 1,
     width: '85%',
     borderBottomColor: '#BEBEBE',
     borderBottomWidth: 1,
@@ -312,9 +318,14 @@ const styles = StyleSheet.create({
     alignSelf:'flex-start'
   },
   signInListContentText:{
-    color:'#fff'
+    color:'#ABBDBE',
+    fontSize:13,
+fontFamily:'Montserrat-Medium'
+
   },
   dontHaveAcText:{
-    color:'#fff'
+    color:'#fff',
+    fontSize:14,
+    fontFamily:'Montserrat-Regular'
   }
 });

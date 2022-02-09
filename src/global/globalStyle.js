@@ -9,7 +9,7 @@ export const globalStyles = StyleSheet.create({
     },
     input: {
         fontFamily:
-          Platform.OS === 'ios' ? 'SFProDisplay-Regular' : 'SF-Pro-Display-Regular',
+          Platform.OS === 'ios' ? 'Poppins-Regular' : 'Poppins-Regular',
         color: '#fff',
         paddingRight: 35,
         fontSize: 14,
@@ -49,25 +49,28 @@ export const globalStyles = StyleSheet.create({
         // display:'flex'
       },
       activateBtText:{
+fontFamily:'Montserrat-Bold',
           color:'#fff',
           textAlign:'center',
           textTransform:'uppercase',
-          fontSize:13
+          fontSize:13,
       },
       lineBt:{
         paddingVertical:15,
         paddingHorizontal:10,
         borderRadius:80,
         borderWidth:1,
-        borderColor:'#fff',
+        borderColor:'#ABBDBE',
         backgroundColor:'#000',
         alignSelf:'stretch'
       },
       lineBtText:{
-        color:'#fff',
+        color:'#ABBDBE',
         textAlign:'center',
         textTransform:'uppercase',
-        fontSize:13
+        fontSize:13,
+fontFamily:'Montserrat-Bold'
+
     },
     
 });

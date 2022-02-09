@@ -22,6 +22,22 @@ export default class Home extends Component {
         <Header />
 
         <View style={styles.historicDataWrapper}>
+
+        <View style={styles.healthMsg}>
+            <Text style={styles.healthMsgTitle}>Slow & Steady</Text>
+            <View style={styles.healthMsgSloganWrap}>
+              {/* <Text style={styles.youAre}>You Are :</Text> */}
+              <Text style={styles.healthMsgSlogan}>
+              Your daily limit is close
+              </Text>
+            </View>
+
+            <Image
+              resizeMode="stretch"
+              source={require('../assets/images/thumbs-up.png')}
+              style={styles.happyIcon}
+            />
+          </View>
           {/* <View style={styles.pointsBatteryWrap}>
                   <View style={styles.pointsBox}>
                     <Image
@@ -51,23 +67,63 @@ export default class Home extends Component {
                 </View> */}
 
           <View style={styles.historicDataContainer}>
-            <View style={styles.batteryBox}>
-              <View style={styles.batteryStatus}>
-                <View style={styles.batteryStatusCol}>
-                  <Image
-                    resizeMode="stretch"
-                    source={require('../assets/images/battery.png')}
-                    style={styles.batteryStatusIcon}
-                  />
+            <View style={styles.homeLeftRow}>
+              <View style={styles.batteryBox}>
+                <View style={styles.batteryStatus}>
+                  <View style={styles.batteryStatusCol}>
+                    <Image
+                      resizeMode="stretch"
+                      source={require('../assets/images/battery.png')}
+                      style={styles.batteryStatusIcon}
+                    />
+                    
+                  </View>
                   <Text style={styles.batteryStatusText}>97%</Text>
+                  <Text style={styles.devicesText}>Device</Text>
                 </View>
-                <Text style={styles.devicesText}>Devices</Text>
+              </View>
+
+              <View style={styles.pointsBox}>
+                <Image
+                  resizeMode="stretch"
+                  source={require('../assets/images/limit.png')}
+                  style={styles.diomondIcon}
+                />
+                <Text style={styles.totalPoints}>50</Text>
+                <Text style={styles.totalPointText}>mg limit</Text>
+              </View>
+              <View style={styles.pointsBox}>
+                <Image
+                  resizeMode="stretch"
+                  source={require('../assets/images/appointment.png')}
+                  style={styles.diomondIcon}
+                />
+                <Text style={styles.totalPoints}>Mar 5</Text>
+                <Text style={styles.totalPointText}>quit date</Text>
+              </View>
+              <View style={styles.pointsBox}>
+                <Image
+                  resizeMode="stretch"
+                  source={require('../assets/images/days.png')}
+                  style={styles.diomondIcon}
+                />
+                <Text style={styles.totalPoints}>64</Text>
+                <Text style={styles.totalPointText}>days remain</Text>
+              </View>
+              <View style={styles.pointsBox}>
+                <Image
+                  resizeMode="stretch"
+                  source={require('../assets/images/mobile.png')}
+                  style={styles.diomondIcon}
+                />
+                <Text style={styles.totalPoints}>Device</Text>
+                <Text style={styles.totalPointText}>connected</Text>
               </View>
             </View>
-            <View style={styles.historicDataBox}>
-              <Text style={styles.historicDataText}>Historic Data</Text>
-            </View>
 
+           
+
+            <View style={styles.homeRightRow}>
             <View style={styles.pointsBox}>
               <Image
                 resizeMode="stretch"
@@ -77,6 +133,45 @@ export default class Home extends Component {
               <Text style={styles.totalPoints}>64</Text>
               <Text style={styles.totalPointText}>Points</Text>
             </View>
+            <View style={styles.pointsBox}>
+              <Image
+                resizeMode="stretch"
+                source={require('../assets/images/hours.png')}
+                style={styles.diomondIcon}
+              />
+              <Text style={styles.totalPoints}>8/24</Text>
+              <Text style={styles.totalPointText}>hours</Text>
+            </View>
+            <View style={styles.pointsBox}>
+              <Image
+                resizeMode="stretch"
+                source={require('../assets/images/Shape-path.png')}
+                style={styles.diomondIcon}
+              />
+              <Text style={styles.totalPoints}>72</Text>
+              <Text style={styles.totalPointText}>bpm</Text>
+            </View>
+            <View style={styles.pointsBox}>
+              <Image
+                resizeMode="stretch"
+                source={require('../assets/images/footssteps.png')}
+                style={styles.diomondIcon}
+              />
+              <Text style={styles.totalPoints}>3.1</Text>
+              <Text style={styles.totalPointText}>mi</Text>
+            </View>
+            <View style={styles.pointsBox}>
+              <Image
+                resizeMode="stretch"
+                source={require('../assets/images/caloriesNew.png')}
+                style={styles.diomondIcon}
+              />
+              <Text style={styles.totalPoints}>1500</Text>
+              <Text style={styles.totalPointText}>kcal</Text>
+            </View>
+            </View>
+
+          
           </View>
 
           <View style={styles.healthDataChart}>
@@ -87,21 +182,11 @@ export default class Home extends Component {
             />
           </View>
 
-          <View style={styles.healthMsg}>
-            <Text style={styles.healthMsgTitle}>Slow & Steady</Text>
-            <View style={styles.healthMsgSloganWrap}>
-              {/* <Text style={styles.youAre}>You Are :</Text> */}
-              <Text style={styles.healthMsgSlogan}>
-              You will get to that date
-              </Text>
+          <View style={styles.historicDataBox}>
+              <Text style={styles.historicDataText}>Historic Data</Text>
             </View>
 
-            <Image
-              resizeMode="stretch"
-              source={require('../assets/images/happy2.png')}
-              style={styles.happyIcon}
-            />
-          </View>
+         
         </View>
       </View>
     );
@@ -114,25 +199,29 @@ const styles = StyleSheet.create({
   },
   historicDataBox: {
     backgroundColor: COLORS.darkBlue,
-    alignSelf: 'center',
+    //alignSelf: 'center',
     paddingHorizontal: 20,
     paddingVertical: 8,
     borderRadius: 80,
+    marginTop:30,
+    alignSelf:'center'
+    //marginTop: 18,
     //marginTop: 70,
   },
   historicDataText: {
     color: '#fff',
     fontSize: 12,
+    fontFamily: 'Montserrat-Bold',
     textTransform: 'uppercase',
   },
   chartImg: {
-    width: 181,
-    height: 181,
+    width: 196,
+    height: 196,
   },
   healthDataChart: {
     alignSelf: 'center',
     paddingTop: 10,
-    paddingBottom:100
+    paddingBottom: 100,
   },
   historicDataList: {
     width: '85%',
@@ -182,17 +271,19 @@ const styles = StyleSheet.create({
   },
   healthMsgTitle: {
     color: '#fff',
-    fontSize: 30,
-    textTransform: 'uppercase',
+    fontSize: 24,
+   // textTransform: 'uppercase',
+    fontFamily: 'Montserrat-SemiBold',
   },
   healthMsgSlogan: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: 24,
     marginVertical: 10,
+    fontFamily: 'Montserrat-Medium',
   },
   healthMsgSloganWrap: {
     flexDirection: 'row',
-    marginBottom:15
+    marginBottom: 15,
   },
   youAre: {
     color: '#707070',
@@ -206,9 +297,10 @@ const styles = StyleSheet.create({
     // borderColor: '#7AA2AB',
     //backgroundColor: '#E4F4F5',
     paddingHorizontal: 7,
-    paddingVertical: 10,
+    paddingVertical: 0,
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 12,
+    flexDirection:'column'
   },
   diomondIcon: {
     width: 24,
@@ -216,11 +308,15 @@ const styles = StyleSheet.create({
   },
   totalPoints: {
     color: COLORS.lightGreen,
-    fontSize: 14,
+    fontSize: 11,
+    fontFamily: 'Montserrat-Bold',
+    marginTop: 3,
   },
   totalPointText: {
     color: COLORS.lightGreen,
-    fontSize: 10,
+    fontSize: 7,
+    fontFamily: 'Montserrat-Regular',
+    textAlign: 'center',
   },
   mobIcon: {
     width: 55,
@@ -232,27 +328,35 @@ const styles = StyleSheet.create({
   },
   batteryBox: {
     width: 55,
-    height: 80,
-    position: 'relative',
+    // height: 80,
+    // position: 'relative',
+    //marginBottom:50,
+    // backgroundColor:'red'
+    marginBottom:15,
+    marginTop:7
+
   },
   batteryStatus: {
-    position: 'absolute',
-    top: 20,
-    left: 20,
+    // position: 'absolute',
+    // top: 20,
+    // left: 20,
     alignItems: 'center',
   },
   devicesText: {
-    fontSize: 10,
+    fontSize: 8,
     color: COLORS.lightGreen,
+    fontFamily: 'Montserrat-SemiBold',
   },
   batteryStatusText: {
-    fontSize: 10,
+    fontSize: 8,
     color: COLORS.lightGreen,
     marginLeft: 5,
+    fontFamily: 'Montserrat-Bold',
   },
   batteryStatusCol: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 5,
   },
   pointsBatteryWrap: {
     position: 'absolute',
@@ -262,7 +366,20 @@ const styles = StyleSheet.create({
   historicDataContainer: {
     flexDirection: 'row',
     width: '100%',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'center',
+    paddingHorizontal: 25,
+    position:'relative',
+    marginTop:15
   },
+  homeLeftRow:{
+    position:'absolute',
+    left:15,
+    top:0
+  },
+  homeRightRow:{
+    position:'absolute',
+    right:15,
+    top:0
+  }
 });

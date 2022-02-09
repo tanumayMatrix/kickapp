@@ -20,10 +20,9 @@ export default class DeviceList extends Component {
     return (
       <KeyboardAvoidingView style={styles.container}>
         <View style={globalStyles.container}>
-        
-           <Header/>
-            <View style={styles.deviceListWrap}>
-              {/* <View style={styles.profileFormWrap}>
+          <Header />
+          <View style={styles.deviceListWrap}>
+            {/* <View style={styles.profileFormWrap}>
                 <Text style={styles.profileFormLabel}>Add your KICK device</Text> 
                 <View style={styles.inputBox}>
                   <TextInput
@@ -39,57 +38,58 @@ export default class DeviceList extends Component {
                 </View>
               </View> */}
 
-              <Text style={styles.deviceListText}>Device List</Text>
-              <Text style={styles.deviceListTextSearching}>
-                Searching for devices
-              </Text>
+            <Text style={styles.deviceListText}>Device List</Text>
+            <Text style={styles.deviceListTextSearching}>
+              Searching for devices
+            </Text>
 
-              <View style={styles.deviceListContainer}>
-              
-                <View style={styles.deviceListBox}>
-                  <View style={styles.deviceListCol1}>
-                    <Image
-                      resizeMode="stretch"
-                      source={require('../assets/images/tik.png')}
-                      style={styles.tikIcon}
-                    />
-                  </View>
-                  <View style={styles.deviceListName}>
-                    <Text style={styles.deviceListNameText}>Kick Device</Text>
-                    <Text style={styles.connectedText}>Connected</Text>
-                  </View>
-                  <View style={styles.deviceListCol2}>
+            <View style={styles.deviceListContainer}>
+              <View style={styles.deviceListBox}>
+                <View style={styles.deviceListCol1}>
                   <Image
-                      resizeMode="stretch"
-                      source={require('../assets/images/device-found.png')}
-                      style={styles.deviceFoundIcon}
-                    />
-                  </View>
+                    resizeMode="stretch"
+                    source={require('../assets/images/tik.png')}
+                    style={styles.tikIcon}
+                  />
                 </View>
+                <View style={styles.deviceListName}>
+                  <Text style={styles.deviceListNameText}>Kick Device</Text>
+                  <Text style={styles.connectedText}>Connected</Text>
+                </View>
+                <View style={styles.deviceListCol2}>
+                  <Image
+                    resizeMode="stretch"
+                    source={require('../assets/images/device-found.png')}
+                    style={styles.deviceFoundIcon}
+                  />
+                </View>
+              </View>
 
-                <View style={styles.deviceListBox}>
-                  {/* <View style={styles.deviceListCol1}>
+              <View style={styles.deviceListBox}>
+                {/* <View style={styles.deviceListCol1}>
                     <Image
                       resizeMode="stretch"
                       source={require('../assets/images/tik.png')}
                       style={styles.tikIcon}
                     />
                   </View> */}
-                  <View style={styles.deviceListName}>
-                    <Text style={styles.deviceListNameText}>Kick Device</Text>
-                    {/* <Text style={styles.connectedText}>Connected</Text> */}
-                  </View>
-                  <View style={styles.deviceListCol2}>
+                <View style={styles.deviceListName}>
+                  <Text style={styles.deviceListNameText}>Kick Device</Text>
+                  {/* <Text style={styles.connectedText}>Connected</Text> */}
+                </View>
+                <View style={styles.deviceListCol2}>
                   <Image
-                      resizeMode="stretch"
-                      source={require('../assets/images/device-found.png')}
-                      style={[styles.deviceFoundIcon, styles.deviceFoundIconInactive]}
-                    />
-                  </View>
+                    resizeMode="stretch"
+                    source={require('../assets/images/device-found.png')}
+                    style={[
+                      styles.deviceFoundIcon,
+                      styles.deviceFoundIconInactive,
+                    ]}
+                  />
                 </View>
               </View>
             </View>
-        
+          </View>
         </View>
       </KeyboardAvoidingView>
     );
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     paddingVertical: 20,
     width: '85%',
     alignSelf: 'center',
-    flex:1
+    flex: 1,
   },
   profileFormWrap: {
     width: '100%',
@@ -127,26 +127,28 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#fff',
     marginTop: 25,
+    fontFamily: 'Montserrat-SemiBold',
   },
   deviceListTextSearching: {
     fontSize: 12,
     color: '#fff',
+    fontFamily: 'Montserrat-Medium',
   },
-  deviceListContainer:{
-    flex:6,
-    marginTop:30
-   /// backgroundColor:'red'
+  deviceListContainer: {
+    flex: 6,
+    marginTop: 30,
+    /// backgroundColor:'red'
   },
   deviceListBox: {
-   // borderRadius: 10,
-    borderColor:'#ABBDBE',
-    borderBottomWidth:1,
+    // borderRadius: 10,
+    borderColor: '#ABBDBE',
+    borderBottomWidth: 1,
     //backgroundColor: '#fff',
     paddingVertical: 15,
-    alignItems:'center',
-   //flex: 1,
-    flexDirection:'row',
-    marginVertical:8,
+    alignItems: 'center',
+    //flex: 1,
+    flexDirection: 'row',
+    marginVertical: 8,
     // shadowColor: '#b2b2b2',
     // shadowOffset: {
     //   width: 0,
@@ -156,38 +158,38 @@ const styles = StyleSheet.create({
     // shadowRadius: 11.95,
 
     // elevation: 18,
-   
   },
-  deviceListCol1:{
-    flex:1
+  deviceListCol1: {
+    flex: 1,
   },
-  deviceListName:{
-    flex:5
+  deviceListName: {
+    flex: 5,
   },
-  deviceListCol2:{
-    flex:1,
-   // backgroundColor:'red',
-    
+  deviceListCol2: {
+    flex: 1,
+    // backgroundColor:'red',
   },
-  tikIcon:{
-    width:24,
-    height:24
+  tikIcon: {
+    width: 24,
+    height: 24,
   },
-  deviceListNameText:{
-    fontSize:16,
-    color:'#fff'
+  deviceListNameText: {
+    fontSize: 16,
+    color: '#fff',
+    fontFamily: 'Montserrat-Medium',
   },
-  deviceFoundIcon:{
-    width:24,
-    height:24,
-    alignSelf:'flex-end',
-    opacity:0.5,
+  deviceFoundIcon: {
+    width: 24,
+    height: 24,
+    alignSelf: 'flex-end',
+    opacity: 0.5,
   },
-  deviceFoundIconInactive:{
-    opacity:1,
+  deviceFoundIconInactive: {
+    opacity: 1,
   },
-  connectedText:{
-    fontSize:10,
-    color:'#fff'
-  }
+  connectedText: {
+    fontSize: 10,
+    color: '#fff',
+    fontFamily: 'Montserrat-Medium',
+  },
 });
